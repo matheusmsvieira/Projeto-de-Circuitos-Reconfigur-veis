@@ -1,0 +1,186 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 28.03.2019 11:41:37
+-- Design Name: 
+-- Module Name: ping_pong_leds - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Deion: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity ping_pong_leds is
+    Port ( clk : in STD_LOGIC;
+           reset : in STD_LOGIC;
+           sw0 : in STD_LOGIC;
+           sw15 : in STD_LOGIC;
+           seg : out STD_LOGIC_VECTOR (7 downto 0);
+           an : out STD_LOGIC_VECTOR (3 downto 0);
+           led : out STD_LOGIC_VECTOR (15 downto 0));
+end ping_pong_leds;
+
+architecture Behavioral of ping_pong_leds is
+
+signal cnt_10Hz 	: integer range 0 to 5000000 := 0;
+signal clk_10Hz 	: std_logic := '0';
+signal cnt_40Hz 	: integer range 0 to 1250000 := 0;
+signal clk_40Hz 	: std_logic := '0';
+signal enable 		: std_logic := '0';
+signal lr 			: std_logic := '1';
+signal player 		: std_logic := '0';
+signal reg 			: std_logic_vector(15 downto 0) := (others=>'0');
+signal cnt0 		: std_logic_vector(3 downto 0) := "0000";
+signal cnt1 		: std_logic_vector(3 downto 0) := "0000";
+signal s_an 		: unsigned(3 downto 0) := "0000";
+signal sel_mux 	: std_logic_vector(1 downto 0):="00";
+signal s_bin 		: std_logic_vector(3 downto 0) := "0000";
+begin
+
+	-- process para dividir o clock 10Hz
+	process(clk,reset)
+	begin
+		if reset='1' then
+			cnt_10Hz <= 0;
+			clk_10Hz <= '0';
+		elsif rising_edge(clk) then
+			if cnt_10Hz = 5000000 then
+				cnt_10Hz <= 0;
+				clk_10Hz <= not clk_10Hz;
+			else
+				cnt_10Hz <= cnt_10Hz + 1;
+			end if;
+		end if;
+	end process;
+
+	-- process para divisor de clock do multiplexador de anodos a 40Hz
+	process(clk,reset)
+	begin
+		if reset='1' then
+			cnt_40Hz <= 0;
+			clk_40Hz <= '0';
+		elsif rising_edge(clk) then
+			if cnt_40Hz = 1250000 then
+				cnt_40Hz <= 0;
+				clk_40Hz <= not clk_40Hz;
+			else
+				cnt_40Hz <= cnt_40Hz + 1;
+			end if;
+		end if;	
+	end process;
+
+	-- process para registrador de deslocamento
+	process(clk_10Hz,reset)
+	begin
+		if reset='1' then
+			reg <= "0000000000000001";
+		elsif rising_edge(clk_10Hz) then
+			if enable = '1' then
+				if lr = '0' then
+					reg <= '0' & reg(15 downto 1);
+				else
+					reg <= reg(14 downto 0) & '0';
+				end if;
+			elsif player = '0' then
+				reg <= "0000000000000001";
+			else
+				reg <= "1000000000000000";
+			end if;
+		end if;
+	end process;
+
+	-- process para controlar jogo
+	process(clk,reset)
+	begin
+		if reset = '1' then
+			cnt0 <= "0000";
+			cnt1 <= "0000";
+			lr <= '1';
+			enable <= '0'; -- habilita jogo
+			player <= '0';
+		elsif rising_edge(clk) then
+			if cnt0 = "1001" or cnt1 = "1001" then
+				lr <= '1'; -- desloca à esquerda
+				enable <= '1'; -- habilita o deslocamento
+				player <= '0'; -- player 0 começa
+				cnt0 <= "0000";
+				cnt1 <= "0000";
+			elsif reg="0000000000000001" and sw0 = '1' then
+				lr <= '1'; -- desloca à esquerda
+				enable <= '1'; -- habilita o deslocamento
+			elsif reg="0000000000000001" and sw0 = '0' then
+				lr <= '0'; -- desloca à direita
+				enable <= '0'; -- deshabilita o deslocamento
+				player <= '1'; -- player 1 joga
+				cnt1 <= cnt1 + 1; -- incrementa placar player 1
+			elsif reg="1000000000000000" and sw15 = '1' then
+				lr <= '0'; -- desloca à direita
+				enable <= '1'; -- habilita o deslocamento
+			elsif reg="1000000000000000" and sw15 = '0' then
+				lr <= '1'; -- desloca à esquerda
+				enable <= '0'; -- deshabilita o deslocamento	
+				player <= '0'; -- player 0 joga
+				cnt0 <= cnt0 + 1;	-- incrementa placar player 0	
+			end if;		
+		end if;
+	end process;
+	
+	-- process para multiplexar anodos
+	process(clk_40Hz,reset)
+	begin
+		if reset='1' then
+			s_an <= "1110";
+			sel_mux <= "00";
+		elsif rising_edge(clk_40Hz) then
+			s_an <= s_an srl 1;
+			sel_mux <= sel_mux + 1;
+		end if;
+	end process;
+	an <= std_logic_vector(s_an);
+	
+	-- mux para decodificador
+	with sel_mux select
+		s_bin <= cnt0 when "00",
+					"1111" when "01", 
+					"1111" when "10", 
+					cnt1 when "11"; 
+	
+	-- process combinacional para decodificar segmentos
+	process(s_bin)
+	begin
+		case s_bin is
+			when "0000" => seg <= "11000000";
+			when "0001" => seg <= "11111001";
+			when "0010" => seg <= "10100100";
+			when "0011" => seg <= "10110000";
+			when "0100" => seg <= "10011001";
+			when "0101" => seg <= "10010010";
+			when "0110" => seg <= "10000010";
+			when "0111" => seg <= "11111000";
+			when "1000" => seg <= "10000000";
+			when "1001" => seg <= "10010000";
+			when "1111" => seg <= "11111111";
+			when others => seg <= "11111111";
+		end case;
+	end process;
+	
+end Behavioral;
+
+
+
+
+
