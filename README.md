@@ -1,2 +1,2 @@
-# Projeto-de-Circuitos-Reconfigur-veis
+# Projeto-de-Circuitos-Reconfiguraveis
 Disciplina PCR - Prof: Daniel Muñoz
