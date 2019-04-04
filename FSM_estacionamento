@@ -1,3 +1,12 @@
+-------Problema do estacionamento
+--Capacidade para 10 carros
+--Uma porta para entrada e saida de carros
+--O carro não pode dar re
+--Dois sensores (IR) com distância de 1 m
+--Semaforo indica se o estacionamento esta disponivel
+--no estado inicial tem 3 vagas
+--
+--
 ----------------------------------------------------------------------------------
 -- Company: 
 -- Engineer: 
