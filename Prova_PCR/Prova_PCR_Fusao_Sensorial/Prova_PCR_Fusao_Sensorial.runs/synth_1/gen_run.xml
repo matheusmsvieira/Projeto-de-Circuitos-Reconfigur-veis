@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1557233516">
+  <File Type="RDS-PROPCONSTRS" Name="Fusao_sensorial_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="Fusao_sensorial.tcl"/>
+  <File Type="RDS-RDS" Name="Fusao_sensorial.vds"/>
+  <File Type="RDS-UTIL" Name="Fusao_sensorial_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Fusao_sensorial_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Fusao_sensorial.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Fusao_sensorial_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Fusao_sensorial_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../GitHub/Circuitos_Reconfiguraveis/simauto/fpupack.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../GitHub/Circuitos_Reconfiguraveis/operadorFloatingPoint/fixMul.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../GitHub/Circuitos_Reconfiguraveis/simauto/entities.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../GitHub/Circuitos_Reconfiguraveis/simauto/multiplierfsm_v2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../GitHub/Circuitos_Reconfiguraveis/operadorFloatingPoint/divNR.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../GitHub/Circuitos_Reconfiguraveis/simauto/addsubfsm_v6.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Fusao_sensorial.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Fusao_sensorial"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

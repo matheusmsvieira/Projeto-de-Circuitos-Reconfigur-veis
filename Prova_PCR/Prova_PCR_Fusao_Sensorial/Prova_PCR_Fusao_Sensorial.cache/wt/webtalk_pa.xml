@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue May 07 09:51:58 2019">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="cbf713fcaa234f1ea7477cd6cd5ce3a0" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="5" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="1" type="JavaHandler"/>
+<property name="RunSynthesis" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="1" type="JavaHandler"/>
+<property name="ui.views.b.y" value="2" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="APPLY, Apply" value="1" type="GuiResourceData"/>
+<property name="CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="5" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 100, 191" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 100, 193" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 100, 197" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 100, 267" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 103, 88" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 104, 192" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 111, 296" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 113, 93" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 113, 93, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 114, 169" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 114, 169, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 114, 90" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 115, 176" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 115, 176, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 116, 100" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 116, 100, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 120, 195" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 125, 90" value="2" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 125, 90, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 128, 31" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 13, 32" value="2" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 13, 32, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 137, 134" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 139, 218" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 148, 89" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 148, 91" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 151, 372" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 154, 176" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 159, 191" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 160, 163" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 171, 369" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 176, 370" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 176, 386" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 177, 389" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 178, 349" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 183, 85" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 188, 232" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 188, 284" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 188, 407" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 189, 371" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 189, 371, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 189, 407" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 190, 169" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 190, 389" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 191, 149" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 196, 172" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 196, 172, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 196, 49" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 196, 49, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 198, 132" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 198, 132, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 199, 188" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 199, 188, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 199, 68" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 199, 68, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 199, 89" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 199, 89, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 203, 128, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 208, 232" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 208, 232, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 208, 87" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 208, 87, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 215, 151" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 215, 271" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 215, 271, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 215, 369" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 215, 369, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 217, 16" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 217, 16, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 219, 349" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 219, 349, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 221, 239" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 221, 239, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 227, 152" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 227, 152, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 228, 229" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 228, 229, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 229, 208" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 230, 112" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 230, 112, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 230, 155" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 230, 155, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 230, 188" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 231, 232" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 231, 232, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 231, 235" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 235, 209" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 246, 167" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 246, 167, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 250, 113" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 251, 108" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 251, 173" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 251, 173, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 252, 227" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 253, 93" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 254, 127" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 254, 127, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 254, 171" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 255, 398" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 258, 189" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 259, 166" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 259, 166, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 259, 212" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 260, 190" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 265, 189" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 266, 213" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 270, 208" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 272, 151" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 272, 151, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 275, 193" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 275, 193, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 278, 194" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 280, 171" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 282, 132" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 283, 151" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 283, 175" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 285, 151" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 285, 163" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 285, 235" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 289, 188" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 289, 191" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 290, 167" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 290, 416" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 290, 72" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 293, 194" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 293, 273" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 299, 194" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 299, 216" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 30, 121" value="4" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 30, 121, false, false, false, false, true" value="2" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 306, 190" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 307, 196" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 31, 93" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 315, 110" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 315, 110, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 316, 193" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 317, 133" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 317, 133, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 319, 150" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 319, 165" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 323, 251" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 323, 251, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 325, 171" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 328, 73" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 328, 73, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 332, 171" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 333, 172" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 334, 168" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 337, 192" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 339, 351" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 348, 221" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 355, 154" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 355, 154, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 355, 155" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 355, 155, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 359, 209" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 360, 188" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 364, 194" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 371, 131" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 371, 131, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 389, 242" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 39, 223" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 390, 194" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 397, 141, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 404, 194" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 414, 171" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 424, 130" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 440, 189" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 474, 258" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 475, 150, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 523, 142" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 523, 142, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 535, 79" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 54, 52" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 55, 68" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 592, 129" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 592, 150" value="2" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 592, 150, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 594, 50" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 596, 210" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 597, 130" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 6, 33" value="2" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 6, 33, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 600, 168" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 601, 208" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 601, 209" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 62, 111" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 62, 189" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 62, 230" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 64, 125" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 67, 89" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 68, 275" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 69, 168" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 69, 169" value="3" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 69, 169, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 70, 186" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 72, 372" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 72, 372, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 74, 218" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 80, 113" value="2" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 80, 113, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 80, 170" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 80, 170, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 81, 127" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 81, 127, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 81, 353" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 81, 353, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 85, 193" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 85, 193, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 87, 171" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 88, 67" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 88, 67, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 89, 156" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 89, 88" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 89, 88, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 94, 231" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 94, 66" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 95, 213" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 95, 213, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 96, 114" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 96, 114, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 96, 171" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 98, 180" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 98, 204" value="1" type="GuiResourceData"/>
+<property name="Fusao_sensorial.vhd, 99, 171" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="9" type="GuiResourceData"/>
+<property name="OK, OK" value="3" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Fusao_sensorial" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources" value="5" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_GENERAL_SETTINGS, Verilog" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SET_AS_TOP, Set as Top" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Fusao_sensorial - Behavioral (Fusao_sensorial.vhd" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, divNR - Behavioral (divNR.vhd" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Run Synthesis], 17, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PACodeEditor_CHANGE_EDITOR_STYLE, Change Font Style..." value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, Basys3 ; digilentinc.com ; C.0 ; xc7a35tcpg236-1 ; 236 ; 1.1 ; 50 ; 90 ; 41600 ; 2 ; 2 ; 106 ; 20800 ; 5 ; 1 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0, 1, Basys3, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, Basys3 ; digilentinc.com ; C.0 ; xc7a35tcpg236-1 ; 236 ; 1.1 ; 50 ; 90 ; 41600 ; 2 ; 2 ; 106 ; 20800 ; 5 ; 1 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0, 1, Basys3, 0, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_BOARDS, Boards" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, Prova_PCR_Fusao_Sensorial" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectSettingsGeneralPage_TARGET_LANGUAGE, VHDL, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SaveProjectUtils_SAVE, Save" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="7" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, VHDLSourceFile_small ; 1 ; Fusao_sensorial.vhd ; xil_defaultlib ; Local to Project, 0, Fusao_sensorial.vhd, 2" value="8" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, VHDLSourceFile_small ; 1 ; Fusao_sensorial.vhd ; xil_defaultlib ; Local to Project, 0, Fusao_sensorial.vhd, 2, false, false, false, false, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="3" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_BLANK_OPERATIONS, Blank Operations" value="2" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, Folding" value="2" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_DELETE, Remove File from Project..." value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="66" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="57" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
